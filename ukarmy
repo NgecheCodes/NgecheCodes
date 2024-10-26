@@ -1,0 +1,1308 @@
+
+<!DOCTYPE html>
+<html lang="en-GB"
+      x-data="root({&quot;lg&quot;:992,&quot;md&quot;:768,&quot;sm&quot;:576,&quot;xl&quot;:1200,&quot;xs&quot;:0,&quot;xxl&quot;:1600,&quot;xxxl&quot;:2560})"
+      x-ignore
+      ax-load="eager"
+      x-bind:class="{ 'reduced-motion': $store.mediaQuery.prefersReducedMotion }"
+      x-bind:style="{ '--viewport-height': $store.mediaQuery.viewportHeight, '--viewport-width': $store.mediaQuery.viewportWidth, '--scrollbar-width': $store.mediaQuery.scrollbarWidth }"
+      x-on:resize.window.debounce="handleResize()">
+<head>
+    <meta charset="utf-8">
+
+    
+<title>Army careers | The British Army</title>
+
+    <meta name="description" content="You belong here. The Army offers you challenge and adventure that you simply can&#x27;t find in any other job. Do something amazing today. The Army is always recruiting, and there are a wide range of roles available for both officers and soldiers. Visit the Role finder&#xA0;to explore they types of role on offer." />
+
+<meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://www.army.mod.uk/army-careers/" />
+
+    <meta property="og:title" content="Army careers | The British Army" />
+
+    <meta property="og:description" content="You belong here. The Army offers you challenge and adventure that you simply can&#x27;t find in any other job. Do something amazing today." />
+
+    <meta property="og:image"
+          content="https://www.army.mod.uk/media/wqoo0o5x/ahqcpl11-official-20230601-029-028.jpg?width=1200&amp;height=630&amp;format=webp&amp;quality=80&amp;v=1db0a992a6185f0"/>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/main.css?v=QnGIYMm7iIoEuOE3d5YfIWxnMdssc0Hgp9sl9d4bcBw" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    <!-- Google Tag Manager -->
+<script nonce="65bexYJGViujRSoMhyqCjB6x">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+        n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MLB8Z54');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+<body x-ref="body">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLB8Z54"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="main-page-layout" id="page-top">
+    <header class="main-page-layout__header">
+        
+<div class="site-header"
+     ax-load="eager"
+     x-ignore
+     x-data="siteHeader">
+
+    <a class="site-header__logo logo-svg ancestor" data-target-content-id="1577" href="/">
+        <span class="visually-hidden">British Army</span>
+    </a>
+
+    <!-- Sticky Header Actions -->
+    <div class="site-header__actions">
+
+            <button type="button"
+                    class="site-header__btn site-header__btn--search"
+                    x-on:click="searchModal.modal.show()">
+                <span class="site-header__btn-text">Search</span>
+                <i class="site-header__btn-icon" aria-hidden="true"></i>
+            </button>
+
+        <button type="button"
+                class="site-header__btn site-header__btn--menu"
+                x-on:click="menuModal.modal.show()">
+            <span class="site-header__btn-text">Menu</span>
+            <i class="site-header__btn-icon" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <!-- Menu Modal -->
+    <div class="site-header__modal site-header__modal--menu" x-ref="menuModal">
+        <div class="site-header__modal-dialog modal-dialog">
+
+            <div class="site-header__modal-header">
+                <a class="site-header__modal-header-logo logo-svg logo-svg--dark ancestor" data-target-content-id="1577" href="/">
+                    <span class="visually-hidden">British Army</span>
+                </a>
+                <button type="button" class="site-header__modal-close action-btn action-btn--dark action-btn--back" x-on:click="menuModal.modal.hide()"><i aria-hidden="true" class="action-btn__icon fa-sharp fa-regular fa-xmark"></i><span class="action-btn__text" data-text-content="Close">Close</span></button>
+            </div>
+
+            <div class="site-header__modal-body">
+                <div class="site-header__primary-menu primary-menu"
+                     ax-load="event (site-header-init)"
+                     x-ignore
+                     x-data="primaryMenu"
+                     x-effect="resetMenu($store.siteHeader.menuModalHidden)">
+
+                    <ul class="primary-menu__list primary-menu__list--show"
+                        x-bind:class="{ 'primary-menu__list--show': primaryMenuListVisible }"
+                        ax-load="event (primary-menu-init)"
+                        x-ignore
+                        x-data="scrollable"
+                        x-effect="updateScrollable($store.mediaQuery)">
+
+                            <li class="primary-menu__item level-1" data-sub-menu-id="subMenu-0a21a6a8">
+                                <a class="primary-menu__item-link" data-target-content-id="1580" href="/learn-and-explore/"><span class="primary-menu__item-link-text" data-text-content="Learn and explore">Learn and explore</span><i aria-hidden="true" class="primary-menu__item-link-icon fa-sharp fa-light fa-plus"></i></a>
+                                <span class="primary-menu__item-sub-menu-item-count"></span>
+                            </li>
+                            <li class="primary-menu__item level-1" data-sub-menu-id="subMenu-b0afd557">
+                                <a class="primary-menu__item-link current" aria-current="page" data-target-content-id="1581" href="/army-careers/"><span class="primary-menu__item-link-text" data-text-content="Army careers">Army careers</span><i aria-hidden="true" class="primary-menu__item-link-icon fa-sharp fa-light fa-plus"></i></a>
+                                <span class="primary-menu__item-sub-menu-item-count"></span>
+                            </li>
+                            <li class="primary-menu__item level-1" data-sub-menu-id="subMenu-ad06d433">
+                                <a class="primary-menu__item-link" data-target-content-id="1582" href="/support-and-training/"><span class="primary-menu__item-link-text" data-text-content="Support and training">Support and training</span><i aria-hidden="true" class="primary-menu__item-link-icon fa-sharp fa-light fa-plus"></i></a>
+                                <span class="primary-menu__item-sub-menu-item-count"></span>
+                            </li>
+                            <li class="primary-menu__item level-1" data-sub-menu-id="subMenu-9762db70">
+                                <a class="primary-menu__item-link" data-target-content-id="1583" href="/news-and-events/"><span class="primary-menu__item-link-text" data-text-content="News and events">News and events</span><i aria-hidden="true" class="primary-menu__item-link-icon fa-sharp fa-light fa-plus"></i></a>
+                                <span class="primary-menu__item-sub-menu-item-count"></span>
+                            </li>
+                    </ul>
+
+                    <div class="primary-menu__sub-menu-container">
+                            
+<div class="primary-menu__sub-menu" id="subMenu-0a21a6a8">
+    <button type="button" class="primary-menu__sub-menu-close link-btn link-btn--dark" ax-load="" x-ignore="" x-data="linkButton" x-on:mouseleave="close()" x-on:blur="close()" x-bind:class="{ &#x27;link-btn--closing&#x27;: closing, &#x27;link-btn--closed&#x27;: closed }"><span class="link-btn__text">Go Back</span></button>
+
+    <div class="primary-menu__sub-menu-scroll-pane"
+         ax-load
+         x-ignore
+         x-data="scrollable"
+         x-effect="updateScrollable($store.mediaQuery)">
+
+        <h3 class="primary-menu__sub-menu-heading">
+            <a class="primary-menu__sub-menu-heading-link" data-target-content-id="1580" href="/learn-and-explore/">Learn and explore</a>
+        </h3>
+
+        
+<ul class="primary-menu__sub-menu-list level-2" data-sub-menu-items="5">
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1630" href="/learn-and-explore/about-the-army/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="About the Army">About the Army</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="18741" href="/learn-and-explore/ranks/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Ranks">Ranks</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1634" href="/learn-and-explore/army-of-the-future/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Army of the future">Army of the future</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="18717" href="/learn-and-explore/global-operations/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Global operations">Global operations</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1624" href="/learn-and-explore/equipment/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Equipment">Equipment</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+</ul>
+
+    </div>
+</div>
+
+                            
+<div class="primary-menu__sub-menu" id="subMenu-b0afd557">
+    <button type="button" class="primary-menu__sub-menu-close link-btn link-btn--dark" ax-load="" x-ignore="" x-data="linkButton" x-on:mouseleave="close()" x-on:blur="close()" x-bind:class="{ &#x27;link-btn--closing&#x27;: closing, &#x27;link-btn--closed&#x27;: closed }"><span class="link-btn__text">Go Back</span></button>
+
+    <div class="primary-menu__sub-menu-scroll-pane"
+         ax-load
+         x-ignore
+         x-data="scrollable"
+         x-effect="updateScrollable($store.mediaQuery)">
+
+        <h3 class="primary-menu__sub-menu-heading">
+            <a class="primary-menu__sub-menu-heading-link current" aria-current="page" data-target-content-id="1581" href="/army-careers/">Army careers</a>
+        </h3>
+
+        
+<ul class="primary-menu__sub-menu-list level-2" data-sub-menu-items="4">
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1611" href="/army-careers/army-life/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Army life">Army life</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1623" href="/army-careers/how-to-apply/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="How to apply">How to apply</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1626" href="/army-careers/careers/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Careers">Careers</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1637" href="/army-careers/the-army-reserve/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="The Army Reserve">The Army Reserve</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+</ul>
+
+    </div>
+</div>
+
+                            
+<div class="primary-menu__sub-menu" id="subMenu-ad06d433">
+    <button type="button" class="primary-menu__sub-menu-close link-btn link-btn--dark" ax-load="" x-ignore="" x-data="linkButton" x-on:mouseleave="close()" x-on:blur="close()" x-bind:class="{ &#x27;link-btn--closing&#x27;: closing, &#x27;link-btn--closed&#x27;: closed }"><span class="link-btn__text">Go Back</span></button>
+
+    <div class="primary-menu__sub-menu-scroll-pane"
+         ax-load
+         x-ignore
+         x-data="scrollable"
+         x-effect="updateScrollable($store.mediaQuery)">
+
+        <h3 class="primary-menu__sub-menu-heading">
+            <a class="primary-menu__sub-menu-heading-link" data-target-content-id="1582" href="/support-and-training/">Support and training</a>
+        </h3>
+
+        
+<ul class="primary-menu__sub-menu-list level-2" data-sub-menu-items="5">
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="2312" href="/support-and-training/our-schools-and-colleges/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Our schools and colleges">Our schools and colleges</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1627" href="/support-and-training/health-performance-and-wellbeing/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Health, performance and wellbeing">Health, performance and wellbeing</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="2256" href="/support-and-training/welfare/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Welfare">Welfare</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="2271" href="/support-and-training/family-support/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Family support">Family support</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1608" href="/support-and-training/veterans/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Veterans">Veterans</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+</ul>
+
+    </div>
+</div>
+
+                            
+<div class="primary-menu__sub-menu" id="subMenu-9762db70">
+    <button type="button" class="primary-menu__sub-menu-close link-btn link-btn--dark" ax-load="" x-ignore="" x-data="linkButton" x-on:mouseleave="close()" x-on:blur="close()" x-bind:class="{ &#x27;link-btn--closing&#x27;: closing, &#x27;link-btn--closed&#x27;: closed }"><span class="link-btn__text">Go Back</span></button>
+
+    <div class="primary-menu__sub-menu-scroll-pane"
+         ax-load
+         x-ignore
+         x-data="scrollable"
+         x-effect="updateScrollable($store.mediaQuery)">
+
+        <h3 class="primary-menu__sub-menu-heading">
+            <a class="primary-menu__sub-menu-heading-link" data-target-content-id="1583" href="/news-and-events/">News and events</a>
+        </h3>
+
+        
+<ul class="primary-menu__sub-menu-list level-2" data-sub-menu-items="4">
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1604" href="/news-and-events/news/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="News">News</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1618" href="/news-and-events/events/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Events">Events</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="1625" href="/news-and-events/publications/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Publications">Publications</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+            <li class="primary-menu__sub-menu-item">
+                <a class="primary-menu__sub-menu-item-link" data-target-content-id="18716" href="/news-and-events/know-your-army/"><span class="primary-menu__sub-menu-item-link-text" data-text-content="Know Your Army">Know Your Army</span><i aria-hidden="true" class="primary-menu__sub-menu-item-link-icon fa-sharp fa-light fa-arrow-up-right"></i></a>
+            </li>
+</ul>
+
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-header__modal-footer">
+                    <a class="primary-menu__sub-menu-cta cta-btn cta-btn--primary" rel="external" target="_blank" href="https://jobs.army.mod.uk"><span class="cta-btn__bg"></span><span class="cta-btn__text">Visit Army Jobs</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="site-header__modal-backdrop site-header__modal-backdrop--menu"></div>
+
+    <!-- Search Modal -->
+        <div class="site-header__modal site-header__modal--search" x-ref="searchModal">
+            <div class="site-header__modal-dialog modal-dialog theme-texture theme-texture--rust"><img alt="" class="theme-texture__background lazy" data-srcset="/assets/images/britisharmy_texture_rust.webp?rmode=pad&amp;width=640&amp;format=webp&amp;quality=60&amp;v=1db215044077000 640w,/assets/images/britisharmy_texture_rust.webp?rmode=pad&amp;width=1280&amp;format=webp&amp;quality=40&amp;v=1db215044077000 1280w,/assets/images/britisharmy_texture_rust.webp?rmode=pad&amp;width=1920&amp;format=webp&amp;quality=20&amp;v=1db215044077000 1920w,/assets/images/britisharmy_texture_rust.webp?rmode=pad&amp;width=3840&amp;format=webp&amp;quality=20&amp;v=1db215044077000 3840w"></img>
+                <div class="site-header__modal-header">
+                    <button type="button" class="site-header__modal-close action-btn action-btn--back" x-on:click="searchModal.modal.hide()"><i aria-hidden="true" class="action-btn__icon fa-sharp fa-regular fa-xmark"></i><span class="action-btn__text" data-text-content="Close">Close</span></button>
+                </div>
+                <div class="site-header__modal-body"
+                     ax-load
+                     x-ignore
+                     x-data="scrollable"
+                     x-effect="updateScrollable($store.mediaQuery)">
+                    
+<div class="site-search loader"
+     :class="{ 'loader--loading': loading }"
+     id="searchLoader-732b4988"
+     x-ignore
+     ax-load="event (site-header-init)"
+     x-data="searchLoader('732b4988')"
+     x-effect="updateQuery($store.siteHeader.searchModalHidden && $store.siteHeader.searchModalWasShown)">
+
+    <div class="site-search__header-container">
+        <div class="site-search__header"
+            x-bind:class="{ 
+                'site-search__header--search-enabled': searchEnabled, 
+                'site-search__header--has-results': totalResultsCount, 
+                'site-search__header--has-query': hasQuery 
+            }">
+            <form class="site-search__search-form" x-on:submit.prevent="submitQuery" action=".">
+                <div x-ignore ax-load="event (search-loader-init-732b4988)" x-data="searchPromptsTypeahead"></div>
+                <legend class="visually-hidden">Search</legend>
+                <label for="queryInput-732b4988" class="visually-hidden">Query</label>
+                <input type="text"
+                    class="site-search__input" 
+                    placeholder="Start your search" 
+                    id="queryInput-732b4988"
+                    x-model="loader.params.query" 
+                    x-ref="queryInput" 
+                    x-bind:class="{ 'site-search__input--hide-focus': queryInputHideFocus }"
+                    x-on:mousedown="queryInputHideFocus = true"
+                    x-on:blur="queryInputHideFocus = false" />
+                <button type="submit" class="site-search__submit-btn"><i aria-hidden="true" class="submit-btn__icon fa-sharp fa-regular fa-magnifying-glass"></i><span class="submit-btn__text" data-text-content="Submit search query">Submit search query</span></button>
+            </form>
+
+            <div class="site-search__header-row">
+                <p class="site-search__results-count">
+                    Showing
+                    <span x-text="currentResultsCount"></span> of
+                    <span x-text="totalResultsCount"></span> results
+                </p>
+                <p class="site-search__no-results">
+                    <span x-show="!searchEnabled">Results will appear here</span>
+                    <span x-show="searchEnabled" style="display: none;">No results found</span>
+                </p>
+                <button class="site-search__clear-btn link-btn" x-on:click="updateQuery(true)">
+                    <span class="link-btn__text">Clear Search</span>
+                </button>
+            </div>
+            
+<div class="search-filters" 
+     x-ignore
+     ax-load="event (search-loader-init-732b4988)"
+     x-data="searchFilters('732b4988')"
+     x-effect="handleResize($store.mediaQuery)">
+
+    <button class="search-filters__modal-open cta-btn cta-btn--primary" x-on:click="filtersModal?.show()"><span class="cta-btn__bg"></span><span class="cta-btn__text">Filters</span></button>
+
+    <div class="search-filters__modal" 
+        x-bind:class="{ 'modal': hasModal }" 
+        x-ref="filtersModal"
+        x-on:show-bs-modal.dot.stop
+        x-on:hide-bs-modal.dot.stop>
+
+        <div class="search-filters__modal-dialog" x-bind:class="{ 'modal-dialog': hasModal }">
+            <div class="search-filters__modal-header">
+                <h3 class="search-filters__heading">Filters</h3>
+                <button type="button" class="search-filters__modal-close action-btn action-btn--light action-btn--back" x-on:click="filtersModal?.hide()"><i aria-hidden="true" class="action-btn__icon fa-sharp fa-regular fa-xmark"></i><span class="action-btn__text" data-text-content="Close">Close</span></button>
+            </div>
+
+            <div class="search-filters__row">
+                    <div class="display-filter display-filter--list theme theme--cloud"
+    x-ignore
+    ax-load="event (search-filters-init-732b4988)"
+    x-data="listDisplayFilter('topics', 'Topic', false, true, true)"
+    x-modelable="selectedValues"
+    x-model="displayFilters.topics.values"
+    x-on:click.outside="closeFilterMenu"
+    x-effect="handleResize($store.mediaQuery)"
+    x-on:search-loader-reset.window="resetFilter($event.detail.searchId === '732b4988')">
+
+    
+<button class="display-filter__toggle"
+    :class="{ 'display-filter__toggle--active': active }"
+    x-on:click="active ? closeFilterMenu : active = true">
+    <span x-text="label">Topic</span>
+    <i class="display-filter__toggle-icon fa-sharp fa-regular fa-arrow-down" aria-hidden="true"></i>
+</button>
+
+
+    <div class="display-filter__panel" 
+        :class="{ 'display-filter__panel--active': active, 'display-filter__panel--overflow-left': overflowLeft }"
+        x-data="scrollable"
+        x-effect="updateScrollable($store.mediaQuery)">
+
+        
+<div class="display-filter__panel-header">
+    <h4 class="display-filter__heading">Topic</h4>
+    <button class="display-filter__close-btn action-btn action-btn--back action-btn--light" x-on:click="closePanel"><i aria-hidden="true" class="action-btn__icon fa-sharp fa-regular fa-chevron-left"></i><span class="action-btn__text" data-text-content="Close">Close</span></button>
+</div>
+
+
+        <ul class="display-filter__filter list-filter list-filter--wide">
+                <li class="list-filter__value-search" x-id="['filterValueSearch']">
+                    <label class="list-filter__value-search-label" :for="$id('filterValueSearch')">
+                        <i class="list-filter__value-search-label-icon fa-sharp fa-regular fa-magnifying-glass" aria-hidden="true"></i>
+                        <span class="visually-hidden">Search values</span>
+                    </label>
+                    <input type="text"
+                        class="list-filter__value-search-input"
+                        x-model="valueSearch"
+                        :id="$id('filterValueSearch')"
+                        x-on:input.debounce="findValues" />
+                    <button class="list-filter__value-search-clear" x-on:click="clearValueSearch">
+                        <i class="list-filter__value-search-clear-icon fa-sharp fa-regular fa-xmark" aria-hidden="true"></i>
+                        <span class="visually-hidden">Clear</span>
+                    </button>
+                </li>
+            <template x-for="value in values" :key="value.valueId">
+                <li class="list-filter__value"
+                    :class="valueItemClass(value)"
+                    x-id="['filterValue']">
+                    <input type="checkbox"
+                        class="list-filter__value-input list-filter__value-input--checkbox"
+                        x-model="value.selected"
+                        :id="$id('filterValue')"
+                        :disabled="value.disabled"
+                        x-on:click="updatedValue(value)" />
+                    <label class="list-filter__value-label dropdown-item" :for="$id('filterValue')">
+                        <span x-text="value.label"></span>
+                    </label>
+                </li>
+            </template>
+        </ul>
+
+        <div class="display-filter__panel-footer">
+    <button type="button"
+        class="display-filter__apply-btn cta-btn cta-btn--primary"
+        x-on:click="applyFilters">
+        <span class="cta-btn__bg"></span>
+        <span class="cta-btn__text display-filter__apply-btn-text display-filter__apply-btn-text--lg">Apply filters</span>
+        <span class="cta-btn__text display-filter__apply-btn-text display-filter__apply-btn-text--sm">Show results</span>
+    </button>
+    <button type="button" 
+        class="display-filter__clear-btn link-btn"
+        x-on:click="clearValues">
+        <span class="link-btn__text display-filter__clear-btn-text display-filter__clear-btn-text--lg">Clear filters</span>
+        <span class="link-btn__text display-filter__clear-btn-text display-filter__clear-btn-text--sm">Reset</span>
+    </button>
+</div>
+
+    </div>
+
+    <input type="hidden"
+        x-ref="valuesData"
+        value="[{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Armed Forces Week&quot;,&quot;value&quot;:&quot;1545&quot;,&quot;valueId&quot;:&quot;1545&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1545&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Army Expo&quot;,&quot;value&quot;:&quot;1548&quot;,&quot;valueId&quot;:&quot;1548&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1548&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Careers&quot;,&quot;value&quot;:&quot;1553&quot;,&quot;valueId&quot;:&quot;1553&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1553&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Ceremonial&quot;,&quot;value&quot;:&quot;1556&quot;,&quot;valueId&quot;:&quot;1556&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1556&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Coronation&quot;,&quot;value&quot;:&quot;1558&quot;,&quot;valueId&quot;:&quot;1558&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1558&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Deployments&quot;,&quot;value&quot;:&quot;1560&quot;,&quot;valueId&quot;:&quot;1560&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1560&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Equipment&quot;,&quot;value&quot;:&quot;1561&quot;,&quot;valueId&quot;:&quot;1561&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1561&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Future Soldier&quot;,&quot;value&quot;:&quot;1562&quot;,&quot;valueId&quot;:&quot;1562&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1562&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Health&quot;,&quot;value&quot;:&quot;1563&quot;,&quot;valueId&quot;:&quot;1563&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1563&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Heritage&quot;,&quot;value&quot;:&quot;1564&quot;,&quot;valueId&quot;:&quot;1564&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1564&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Innovation&quot;,&quot;value&quot;:&quot;1565&quot;,&quot;valueId&quot;:&quot;1565&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1565&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Operations&quot;,&quot;value&quot;:&quot;1566&quot;,&quot;valueId&quot;:&quot;1566&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1566&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;People&quot;,&quot;value&quot;:&quot;1567&quot;,&quot;valueId&quot;:&quot;1567&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1567&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Remembrance&quot;,&quot;value&quot;:&quot;1568&quot;,&quot;valueId&quot;:&quot;1568&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1568&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Sport&quot;,&quot;value&quot;:&quot;1569&quot;,&quot;valueId&quot;:&quot;1569&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1569&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Sustainability&quot;,&quot;value&quot;:&quot;1570&quot;,&quot;valueId&quot;:&quot;1570&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1570&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Technology&quot;,&quot;value&quot;:&quot;1571&quot;,&quot;valueId&quot;:&quot;1571&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1571&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Training&quot;,&quot;value&quot;:&quot;1572&quot;,&quot;valueId&quot;:&quot;1572&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1572&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;What We Do&quot;,&quot;value&quot;:&quot;1573&quot;,&quot;valueId&quot;:&quot;1573&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1573&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0},{&quot;key&quot;:&quot;topics&quot;,&quot;label&quot;:&quot;Who We Are&quot;,&quot;value&quot;:&quot;1574&quot;,&quot;valueId&quot;:&quot;1574&quot;,&quot;path&quot;:[&quot;-1&quot;,&quot;1524&quot;,&quot;1525&quot;,&quot;1530&quot;,&quot;1574&quot;],&quot;selected&quot;:false,&quot;disabled&quot;:false,&quot;hidden&quot;:false,&quot;selectedAncestor&quot;:false,&quot;level&quot;:0}]" />
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="search-filters__modal-backdrop"></div>
+</div>
+
+<input type="hidden"
+       x-ref="displayFiltersData"
+       value="[{&quot;searchId&quot;:&quot;732b4988&quot;,&quot;key&quot;:&quot;topics&quot;,&quot;filterId&quot;:1530,&quot;label&quot;:&quot;Topic&quot;,&quot;viewName&quot;:&quot;ListDisplayFilter&quot;}]" />
+
+        </div>
+    </div>
+
+    <div class="loader__overlay">
+    <div class="spinner-border loader__spinner" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+
+    <div class="site-search__results-container"
+        x-bind:class="{ 'site-search__results-container--has-results': currentResultsCount }"
+        x-ref="loaderContainer">
+        <div class="site-search__results"
+     data-search-enabled="false"
+     data-total-results-count="0">
+</div>
+
+    </div>
+
+    <input type="hidden"
+           x-ref="searchParams"
+           value="{&quot;searchId&quot;:&quot;732b4988&quot;,&quot;currentPageId&quot;:1581,&quot;culture&quot;:&quot;en-GB&quot;,&quot;contentId&quot;:&quot;b0afd557-b564-4866-903f-0ce5e824b58f&quot;,&quot;memberId&quot;:0,&quot;indexName&quot;:&quot;ExternalIndex&quot;,&quot;indexType&quot;:&quot;content&quot;,&quot;searchView&quot;:&quot;SiteSearchResults&quot;,&quot;resultsView&quot;:null,&quot;resultsLayout&quot;:null,&quot;resultsLayoutOptions&quot;:[],&quot;postFilters&quot;:[],&quot;nodeTypeFilters&quot;:[&quot;newsDetailsPage&quot;,&quot;eventDetailsPage&quot;,&quot;contentPage&quot;],&quot;nodeIds&quot;:[],&quot;nodeIdsMode&quot;:null,&quot;enableSearch&quot;:false,&quot;query&quot;:null,&quot;filters&quot;:[{&quot;id&quot;:1530,&quot;key&quot;:&quot;topics&quot;,&quot;queryType&quot;:&quot;List&quot;,&quot;queryGroup&quot;:null,&quot;valuePropertyType&quot;:&quot;nodeId&quot;,&quot;values&quot;:[],&quot;isActive&quot;:false}],&quot;displayFilters&quot;:[1529],&quot;itemsPerPage&quot;:5,&quot;page&quot;:1,&quot;enablePagination&quot;:true,&quot;sortOrder&quot;:0,&quot;sortOrderOptions&quot;:[],&quot;enableSortOrderOptions&quot;:false,&quot;useQueryString&quot;:false,&quot;filtersMenuActive&quot;:false}" />
+</div>
+
+                </div>
+                <div class="site-header__modal-footer"></div>
+            </div>
+        </div>
+        <div class="site-header__modal-backdrop site-header__modal-backdrop--search"></div>
+</div>
+
+    </header>
+    <main class="main-page-layout__body">
+        
+<div class="header-content header-content-theme header-content-theme--dark umb-block-list">
+
+<div class="primary-hero-banner">
+    <div class="theme theme--dark theme-texture theme-texture--metal"><img alt="" class="theme-texture__background lazy" data-srcset="/assets/images/britisharmy_texture_metal.webp?rmode=pad&amp;width=640&amp;format=webp&amp;quality=60&amp;v=1db215044077000 640w,/assets/images/britisharmy_texture_metal.webp?rmode=pad&amp;width=1280&amp;format=webp&amp;quality=40&amp;v=1db215044077000 1280w,/assets/images/britisharmy_texture_metal.webp?rmode=pad&amp;width=1920&amp;format=webp&amp;quality=20&amp;v=1db215044077000 1920w,/assets/images/britisharmy_texture_metal.webp?rmode=pad&amp;width=3840&amp;format=webp&amp;quality=20&amp;v=1db215044077000 3840w"></img>
+        <div class="primary-hero-banner__text-container">
+            <div class="primary-hero-banner__text-content primary-hero-banner__text-content--align-left">
+                    <ul class="primary-hero-banner__tagline">
+                            <li>Army Careers</li>
+                    </ul>
+                <h1 class="primary-hero-banner__headline">
+                    Join the Army
+                </h1>
+                    <p class="primary-hero-banner__description">
+                        The Army offers you challenge and adventure that you simply can&#x27;t find in any other job. Do something amazing today.
+                    </p>
+                    <a x-data x-bind:class="{ 'cta-btn--primary': $store.mediaQuery.matches.lg.down, 'cta-btn--secondary': $store.mediaQuery.matches.lg.up }" rel="external" target="_blank" href="https://jobs.army.mod.uk" class="nav-link cta-btn cta-btn--secondary"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+                        Visit Army Jobs
+                    </span></a>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+</div>
+
+
+<div class="umb-block-grid"
+     data-grid-columns="12;"
+     style="--umb-block-grid--grid-columns: 12;">
+    
+<div class="umb-block-grid__layout-container">
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="fullWidthLayout" data-content-element-type-key="cb2ef19f-9bfb-4643-94e2-fbd76ad52fa9" data-element-udi="umb://element/d940bcac57a5467c9fe277523695c968" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="umb-block-grid__layout umb-block-grid__layout--fluid">
+    
+<div class="umb-block-grid__area-container"
+     style="--umb-block-grid--area-grid-columns: 12;">
+
+<div class="umb-block-grid__area umb-block-grid__area--fluid-main"
+     data-area-col-span="12"
+     data-area-row-span="1"
+     data-area-alias="fluid-main"
+     style="--umb-block-grid--grid-columns: 12; --umb-block-grid--area-column-span: 12; --umb-block-grid--area-row-span: 1;">
+    
+<div class="umb-block-grid__layout-container">
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="mediaCutOutBannerBlock" data-content-element-type-key="1633fecd-95ae-43f1-b8a8-8c153680f91f" data-element-udi="umb://element/36ca758ab96c445d8ae39931691797e6" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="media-cut-out-banner theme theme--dark">
+    <div class="media-cut-out-banner__media-container">
+            <picture class="media-cut-out-banner__image-cut-out"><source data-srcset="/media/jl0kjwz5/soldier-cut-out.png?width=2560&height=1440&format=webp&quality=50&v=1db13f8ee3aa700" media="(min-width:1200px)"/><source data-srcset="/media/jl0kjwz5/soldier-cut-out.png?width=1200&height=675&format=webp&quality=60&v=1db13f8ee3aa700" media="(min-width:768px)"/><img class="lazy" data-src="/media/jl0kjwz5/soldier-cut-out.png?width=768&height=432&format=webp&quality=70&v=1db13f8ee3aa700" alt="" /></picture>
+        
+<div class="media-video">
+        <style>#media-d385764f { --media-aspect-ratio: 1600/900; }
+@media (min-width:768px) { #media-d385764f { --media-aspect-ratio: 1600/900; }}
+@media (min-width:1200px) { #media-d385764f { --media-aspect-ratio: 1600/900; }}
+</style>
+        <div class="media-video__media-container media-video__media-container--video"
+             id="media-d385764f"
+             x-ignore
+             ax-load="event (exp-content-load-complete)"
+             x-data="mediaVideo('media-d385764f', 'YouTube', 'TA5RwM_aNAU', false, true, false)"
+             x-intersect:enter="handleEnterViewport()"
+             x-intersect:leave="handleLeaveViewport()">
+            <div class="media-video__player-container" x-ref="playerEl" x-bind:class="{ 'media-video__player-container--hidden' : !overlayHidden }">
+                <span class="media-video__player"></span>
+            </div>
+
+            <div class="media-video__player-overlay" x-bind:class="{ 'media-video__player-overlay--hidden' : overlayHidden }">
+                    <picture class="media-video__player-overlay-image"><source data-srcset="/media/k3jiiisz/ahqsgt2-official-20230516-006-017jpgicfm_mjemwataaygakkcfdos.png?width=2560&height=1440&format=webp&quality=50&v=1db13f8edd666f0" media="(min-width:1200px)"/><source data-srcset="/media/k3jiiisz/ahqsgt2-official-20230516-006-017jpgicfm_mjemwataaygakkcfdos.png?width=1200&height=675&format=webp&quality=60&v=1db13f8edd666f0" media="(min-width:768px)"/><img class="lazy" data-src="/media/k3jiiisz/ahqsgt2-official-20230516-006-017jpgicfm_mjemwataaygakkcfdos.png?width=768&height=432&format=webp&quality=70&v=1db13f8edd666f0" alt="" /></picture>
+                <button class="media-video__player-control action-btn action-btn--light" x-on:click="togglePlay()"><i aria-hidden="true" class="action-btn__icon fa-sharp fa-solid fa-play"></i><span class="action-btn__text" data-text-content="Play">Play</span></button>
+            </div>
+        </div>
+</div>
+
+    </div>
+    <div class="media-cut-out-banner__content-container media-cut-out-banner__content-container--inactive"
+         x-ignore
+         ax-load
+         x-data="mediaCutOutBanner()"
+         x-intersect:enter.margin.-30%="handleEnterViewport()"
+         x-bind:class="{ 'media-cut-out-banner__content-container--inactive': !active }">
+
+        <div class="media-cut-out-banner__row row">
+            <div class="media-cut-out-banner__col">
+                    <ul class="media-cut-out-banner__tagline">
+                        <li>Careers</li>
+                    </ul>
+
+                <h2 class="media-cut-out-banner__headline">You belong here</h2>
+
+                    <p class="media-cut-out-banner__description">Whether you are joining as a soldier or an officer, full time or as a part time Reservist, joining the Army starts with an online application.&#xA;&#xA;Once you&#x27;ve submitted your application, you&#x27;ll be guided through the process by a Recruiter or Candidate Support Manager. Find out more about the joining process.</p>
+
+                    <a href="https://apply.army.mod.uk/login" class="nav-link cta-btn cta-btn--primary"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+                        Start my application
+                    </span></a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="statisticsBannerBlock" data-content-element-type-key="55884b64-2876-452d-afde-66e7b189b9a3" data-element-udi="umb://element/074d0b7ee671461d84bad5a6f32056f4" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="statistics-banner" x-ignore ax-load x-data="statisticsBanner(1)">
+    <div class="swiper-wrapper">
+            <div class="statistics-banner-item swiper-slide">
+    <div class="statistics-banner-item__main">
+            <style>#media-5eb7d843 { --media-aspect-ratio: 600/600; }
+@media (min-width:768px) { #media-5eb7d843 { --media-aspect-ratio: 2100/900; }}
+@media (min-width:1200px) { #media-5eb7d843 { --media-aspect-ratio: 2100/900; }}
+</style><picture class="statistics-banner-item__background-image" id="media-5eb7d843"><source data-srcset="/media/tkmk5p4z/8ae9b88a45e543fab0f746ccf6071b80.jpg?width=2560&height=1097&format=webp&quality=50&v=1db13f8eeca15c0" media="(min-width:1200px)"/><source data-srcset="/media/tkmk5p4z/8ae9b88a45e543fab0f746ccf6071b80.jpg?width=1200&height=514&format=webp&quality=60&v=1db13f8eeca15c0" media="(min-width:768px)"/><img class="lazy" data-src="/media/tkmk5p4z/8ae9b88a45e543fab0f746ccf6071b80.jpg?width=768&height=768&format=webp&quality=70&v=1db13f8eeca15c0" alt="" /></picture>
+        <div class="statistics-banner-item__container">
+            <div class="row">
+                <h2 class="statistics-banner-item__featured-stat">
+                    <span class="statistics-banner-item__featured-stat-value">
+                        <span>One Force, One team</span>
+                    </span>
+                    <span class="statistics-banner-item__featured-stat-label">Fighting and winning battles on the land</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="statistics-banner-item__supporting theme-texture theme-texture--metal"><img alt="" class="theme-texture__background lazy" data-srcset="/assets/images/britisharmy_texture_metal.webp?rmode=pad&amp;width=640&amp;format=webp&amp;quality=60&amp;v=1db215044077000 640w,/assets/images/britisharmy_texture_metal.webp?rmode=pad&amp;width=1280&amp;format=webp&amp;quality=40&amp;v=1db215044077000 1280w,/assets/images/britisharmy_texture_metal.webp?rmode=pad&amp;width=1920&amp;format=webp&amp;quality=20&amp;v=1db215044077000 1920w,/assets/images/britisharmy_texture_metal.webp?rmode=pad&amp;width=3840&amp;format=webp&amp;quality=20&amp;v=1db215044077000 3840w"></img>
+        <div class="statistics-banner-item__container">
+            <dl class="statistics-banner-item__supporting-row row">
+                        <div class="statistics-banner-item__supporting-stat">
+                            <dt class="statistics-banner-item__supporting-stat-label">different jobs</dt>
+                            <dd class="statistics-banner-item__supporting-stat-value">More than 200</dd>
+                        </div>
+                        <div class="statistics-banner-item__supporting-stat">
+                            <dt class="statistics-banner-item__supporting-stat-label">after training</dt>
+                            <dd class="statistics-banner-item__supporting-stat-value">Start on &#xA3;20k&#x2B;</dd>
+                        </div>
+                        <div class="statistics-banner-item__supporting-stat">
+                            <dt class="statistics-banner-item__supporting-stat-label">different apprenticeships</dt>
+                            <dd class="statistics-banner-item__supporting-stat-value">Over 40</dd>
+                        </div>
+            </dl>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+        </div>
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="imageTextBannerBlock" data-content-element-type-key="ddc8934d-6520-4f98-b5a2-0d74d7b966a9" data-element-udi="umb://element/3c1666600f8d4c59b236c298407c2ef3" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="image-text-banner image-text-banner--inactive theme theme--cloud" ax-load x-ignore x-data="imageTextBanner()" x-intersect:enter.margin.-50%="handleEnterViewport()" x-intersect:leave.margin.-50%="handleLeaveViewport($store.mediaQuery.matches.lg.down)" x-bind:class="{ 'image-text-banner--inactive': !active }">
+
+     <div class="image-text-banner__container">
+        <div class="image-text-banner__row row">
+            <div class="image-text-banner__image-col">
+                    <style>#media-513d52ed { --media-aspect-ratio: 600/600; }
+@media (min-width:768px) { #media-513d52ed { --media-aspect-ratio: 400/300; }}
+@media (min-width:1200px) { #media-513d52ed { --media-aspect-ratio: 300/400; }}
+</style><picture class="image-text-banner__image-content" id="media-513d52ed"><source data-srcset="/media/eybcbeqz/3feb0a07fdfcbd4d2bc3e7c533c2987e.jpg?width=1280&height=1707&format=webp&quality=50&v=1db13f8eef23730" media="(min-width:1200px)"/><source data-srcset="/media/eybcbeqz/3feb0a07fdfcbd4d2bc3e7c533c2987e.jpg?width=600&height=450&format=webp&quality=60&v=1db13f8eef23730" media="(min-width:768px)"/><img class="lazy" data-src="/media/eybcbeqz/3feb0a07fdfcbd4d2bc3e7c533c2987e.jpg?width=768&height=768&format=webp&quality=70&v=1db13f8eef23730" alt="" /></picture>
+            </div>
+            <div class="image-text-banner__content-col">
+                    <ul class="image-text-banner__tagline">
+                        <li>Entry requirements and standards</li>
+                    </ul>
+
+                    <h2 class="image-text-banner__title">Joining the Army</h2>
+            
+                    <div class="image-text-banner__description rte">
+                        <p>To join the Army, you need to meet a set of basic requirements. These include telling us about your age, nationality, health and fitness. We will also ask you about your education and qualifications, but this is to help to find the right role for you. You can still join the Army if you have no formal qualifications.</p>
+                    </div>
+
+
+                    <a class="image-text-banner__cta-btn cta-btn cta-btn--primary" data-target-content-id="2303" href="/army-careers/careers/entry-requirements-and-standards/"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+                        Can I join?
+                    </span></a>
+            
+            </div>
+        </div>
+     </div>
+</div>
+        </div>
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="imageTextBannerBlock" data-content-element-type-key="ddc8934d-6520-4f98-b5a2-0d74d7b966a9" data-element-udi="umb://element/993deb99e28c42eab611a6310c313cc2" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="image-text-banner image-text-banner--inactive image-text-banner--reverse theme theme--cloud" ax-load x-ignore x-data="imageTextBanner()" x-intersect:enter.margin.-50%="handleEnterViewport()" x-intersect:leave.margin.-50%="handleLeaveViewport($store.mediaQuery.matches.lg.down)" x-bind:class="{ 'image-text-banner--inactive': !active }">
+
+     <div class="image-text-banner__container">
+        <div class="image-text-banner__row row">
+            <div class="image-text-banner__image-col">
+                    <style>#media-e4b62771 { --media-aspect-ratio: 600/600; }
+@media (min-width:768px) { #media-e4b62771 { --media-aspect-ratio: 400/300; }}
+@media (min-width:1200px) { #media-e4b62771 { --media-aspect-ratio: 300/400; }}
+</style><picture class="image-text-banner__image-content" id="media-e4b62771"><source data-srcset="/media/dv4npkhx/aposw-2018-042-rwxy-238.jpg?rxy=0.5733976567884218,0.34795926181177733&width=1280&height=1707&format=webp&quality=50&v=1db1315b535bb40" media="(min-width:1200px)"/><source data-srcset="/media/dv4npkhx/aposw-2018-042-rwxy-238.jpg?rxy=0.5733976567884218,0.34795926181177733&width=600&height=450&format=webp&quality=60&v=1db1315b535bb40" media="(min-width:768px)"/><img class="lazy" data-src="/media/dv4npkhx/aposw-2018-042-rwxy-238.jpg?rxy=0.5733976567884218,0.34795926181177733&width=768&height=768&format=webp&quality=70&v=1db1315b535bb40" alt="" /></picture>
+            </div>
+            <div class="image-text-banner__content-col">
+
+                    <h2 class="image-text-banner__title">The Army Reserve</h2>
+            
+                    <div class="image-text-banner__description rte">
+                        <p>Army Reserve Soldiers come from all walks of life and work part-time as soldiers for the British Army alongside full-time Regular soldiers.</p>
+<p><a href="https://jobs.army.mod.uk/army-reserve/available-roles/">Reservist roles</a> give people who have specialist skills, like medics and engineers, a range of exciting opportunities to use them in new ways.</p>
+                    </div>
+
+
+                    <a class="image-text-banner__cta-btn cta-btn cta-btn--primary" href="https://jobs.army.mod.uk/army-reserve/"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+                        Explore our reservist roles
+                    </span></a>
+            
+            </div>
+        </div>
+     </div>
+</div>
+        </div>
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="imageTextBannerBlock" data-content-element-type-key="ddc8934d-6520-4f98-b5a2-0d74d7b966a9" data-element-udi="umb://element/e972aedb637047eda0e59a464e4391d2" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="image-text-banner image-text-banner--inactive theme theme--cloud" ax-load x-ignore x-data="imageTextBanner()" x-intersect:enter.margin.-50%="handleEnterViewport()" x-intersect:leave.margin.-50%="handleLeaveViewport($store.mediaQuery.matches.lg.down)" x-bind:class="{ 'image-text-banner--inactive': !active }">
+
+     <div class="image-text-banner__container">
+        <div class="image-text-banner__row row">
+            <div class="image-text-banner__image-col">
+                    <style>#media-ab44ddca { --media-aspect-ratio: 600/600; }
+@media (min-width:768px) { #media-ab44ddca { --media-aspect-ratio: 400/300; }}
+@media (min-width:1200px) { #media-ab44ddca { --media-aspect-ratio: 300/400; }}
+</style><picture class="image-text-banner__image-content" id="media-ab44ddca"><source data-srcset="/media/zs0cs1ir/accdn-official-20240821-076-6002.jpg?width=1280&height=1707&format=webp&quality=50&v=1db10c32b54b380" media="(min-width:1200px)"/><source data-srcset="/media/zs0cs1ir/accdn-official-20240821-076-6002.jpg?width=600&height=450&format=webp&quality=60&v=1db10c32b54b380" media="(min-width:768px)"/><img class="lazy" data-src="/media/zs0cs1ir/accdn-official-20240821-076-6002.jpg?width=768&height=768&format=webp&quality=70&v=1db10c32b54b380" alt="" /></picture>
+            </div>
+            <div class="image-text-banner__content-col">
+
+                    <h2 class="image-text-banner__title">Jobs available</h2>
+            
+                    <div class="image-text-banner__description rte">
+                        <p>The Army is always recruiting, and there are a wide range of roles available for both officers and soldiers. Visit the <a href="https://jobs.army.mod.uk/regular-army/find-a-role/" title="Role Finder">Role finder</a>&nbsp;to explore they types of role on offer. If you're not sure whether joining as a soldier or officer is right for you, you can run a quick check with the&nbsp;<a href="https://jobs.army.mod.uk/regular-army/entry-options/" title="entry options">entry options</a> tool.</p>
+                    </div>
+
+
+                    <a class="image-text-banner__cta-btn cta-btn cta-btn--primary" rel="external" target="_blank" href="https://jobs.army.mod.uk/regular-army/find-a-role/"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+                        What we offer
+                    </span></a>
+            
+            </div>
+        </div>
+     </div>
+</div>
+        </div>
+</div>
+
+</div>
+</div>
+
+</div>
+        </div>
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="containedSingleColumnLayout" data-content-element-type-key="d4a8127f-2368-4a5b-8626-20c964b3748e" data-element-udi="umb://element/a3a237ab67a946df91789fb42a736c0e" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="umb-block-grid__layout umb-block-grid__layout--contained">
+    
+<div class="umb-block-grid__area-container"
+     style="--umb-block-grid--area-grid-columns: 12;">
+
+<div class="umb-block-grid__area umb-block-grid__area--main"
+     data-area-col-span="12"
+     data-area-row-span="1"
+     data-area-alias="main"
+     style="--umb-block-grid--grid-columns: 12; --umb-block-grid--area-column-span: 12; --umb-block-grid--area-row-span: 1;">
+    
+<div class="umb-block-grid__layout-container">
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="mediaBlock" data-content-element-type-key="642792e6-59e2-4b67-9e38-84d1317efaeb" data-element-udi="umb://element/89f01780c4694e6a883e7d45763644e0" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="media-block">
+    
+<div class="media-video">
+        <style>#media-fab0527d { --media-aspect-ratio: 1600/900; }
+@media (min-width:768px) { #media-fab0527d { --media-aspect-ratio: 1600/900; }}
+@media (min-width:1200px) { #media-fab0527d { --media-aspect-ratio: 1600/900; }}
+</style>
+        <div class="media-video__media-container media-video__media-container--video"
+             id="media-fab0527d"
+             x-ignore
+             ax-load="event (exp-content-load-complete)"
+             x-data="mediaVideo('media-fab0527d', 'YouTube', 'oaLrTE50ivI', false, true, true)"
+             x-intersect:enter="handleEnterViewport()"
+             x-intersect:leave="handleLeaveViewport()">
+            <div class="media-video__player-container" x-ref="playerEl" x-bind:class="{ 'media-video__player-container--hidden' : !overlayHidden }">
+                <span class="media-video__player"></span>
+            </div>
+
+            <div class="media-video__player-overlay" x-bind:class="{ 'media-video__player-overlay--hidden' : overlayHidden }">
+                <button class="media-video__player-control action-btn action-btn--light" x-on:click="togglePlay()"><i aria-hidden="true" class="action-btn__icon fa-sharp fa-solid fa-play"></i><span class="action-btn__text" data-text-content="Play">Play</span></button>
+            </div>
+        </div>
+</div>
+
+</div>
+        </div>
+</div>
+
+</div>
+</div>
+
+</div>
+        </div>
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="fullWidthLayout" data-content-element-type-key="cb2ef19f-9bfb-4643-94e2-fbd76ad52fa9" data-element-udi="umb://element/803201d94bee4b3d997eae93d0e16512" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="umb-block-grid__layout umb-block-grid__layout--fluid">
+    
+<div class="umb-block-grid__area-container"
+     style="--umb-block-grid--area-grid-columns: 12;">
+
+<div class="umb-block-grid__area umb-block-grid__area--fluid-main"
+     data-area-col-span="12"
+     data-area-row-span="1"
+     data-area-alias="fluid-main"
+     style="--umb-block-grid--grid-columns: 12; --umb-block-grid--area-column-span: 12; --umb-block-grid--area-row-span: 1;">
+    
+<div class="umb-block-grid__layout-container">
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="newsContentListingBlock" data-content-element-type-key="009b85d9-24a7-4a8d-89b2-2241e594369a" data-element-udi="umb://element/1e7310eb3f624874a61674cc2a1831c6" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="content-listing-search content-listing-search--regular theme theme--dark">
+    
+<div class="content-listing-search__header">
+    <div class="content-listing-search__header-row">
+            <h2 class="content-listing-search__title">Careers news</h2>
+            <a data-target-content-id="1604" href="/news-and-events/news/" class="nav-link link-btn" ax-load="" x-ignore="" x-data="linkButton" x-on:mouseleave="close()" x-on:blur="close()" x-bind:class="{ &#x27;link-btn--closing&#x27;: closing, &#x27;link-btn--closed&#x27;: closed }"><span class="link-btn__text">
+                Read all news
+            </span></a>
+        
+    </div>
+</div>
+
+    <div class="content-listing-search__results-container">
+        
+<div class="content-listing-search__results">
+<div class="regular-listing-card-carousel"
+    x-ignore
+    ax-load
+    x-data="regularListingCardCarousel(10, false)"
+    x-effect="handleResize($store.mediaQuery)">
+
+    <div class="regular-listing-card-carousel__container" x-ref="swiper">
+
+        <div class="swiper-controls">
+    <button class="action-btn action-btn--dark action-btn--back" x-ref="swiperPrev"><i aria-hidden="true" class="action-btn__icon fa-sharp fa-regular fa-chevron-left"></i><span class="action-btn__text" data-text-content="Previous">Previous</span></button>
+    <button class="action-btn action-btn--dark action-btn--forward" x-ref="swiperNext"><i aria-hidden="true" class="action-btn__icon fa-sharp fa-regular fa-chevron-right"></i><span class="action-btn__text" data-text-content="Next">Next</span></button>
+</div>
+
+
+        <div class="regular-listing-card-carousel__row row swiper-wrapper" x-bind:class="{ 'row' : !swiperInit }">
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">29 Dec 2023</li>
+                    <li class="regular-listing-card__meta-data-item">Armed Forces Week</li>
+            </ul>
+        <h3 class="regular-listing-card__title">New Year Honours 2024: Army Commendations and Awards</h3>
+
+            <p class="regular-listing-card__description">As part of the Military Division of the New Year Honours List 2024, the Army has awarded some of its outstanding personnel and civil servants with a selection of commendations and medals, including the Meritorious Service Medal</p>
+    </div>
+    <a href="/news/new-year-honours/" class="stretched-link" aria-label="New Year Honours 2024: Army Commendations and Awards"></a>
+</div>
+
+                </div>
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">11 Dec 2023</li>
+                    <li class="regular-listing-card__meta-data-item">Careers</li>
+            </ul>
+        <h3 class="regular-listing-card__title">Reservist&#x2019;s military skills earn him civilian promotion</h3>
+
+            <p class="regular-listing-card__description">A Reservist from Clacton credits the skills he has developed in the Army with helping him progress in his civilian career.</p>
+    </div>
+    <a href="/news/reservist-s-military-skills-earn-him-civilian-promotion/" class="stretched-link" aria-label="Reservist&#x2019;s military skills earn him civilian promotion"></a>
+</div>
+
+                </div>
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">22 May 2023</li>
+                    <li class="regular-listing-card__meta-data-item">Careers</li>
+            </ul>
+        <h3 class="regular-listing-card__title">Chaplain General of HM Land Forces joins Cathedral&#x2019;s College of Canons</h3>
+
+            <p class="regular-listing-card__description">The Revd Mike Parker KHC, the Chaplain General of His Majesty&#x2019;s Land Forces, has been installed as a Sarum Canon at Salisbury Cathedral, an honorary position recognising his contribution to the Church and the Armed Forces and his role within the military community locally, and nationally.</p>
+    </div>
+    <a href="/news/chaplain-general-of-hm-land-forces-joins-cathedral-s-college-of-canons/" class="stretched-link" aria-label="Chaplain General of HM Land Forces joins Cathedral&#x2019;s College of Canons"></a>
+</div>
+
+                </div>
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">21 Jun 2023</li>
+                    <li class="regular-listing-card__meta-data-item">Careers</li>
+            </ul>
+        <h3 class="regular-listing-card__title">From fast food worker to troop commander</h3>
+
+            <p class="regular-listing-card__description">From fast-food restaurant to riding military horses around London and performing guard duties, Lieutenant Joe Gregg now manages a troop of 30 soldiers.</p>
+    </div>
+    <a href="/news/from-fast-food-worker-to-troop-commander/" class="stretched-link" aria-label="From fast food worker to troop commander"></a>
+</div>
+
+                </div>
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">22 Jun 2023</li>
+                    <li class="regular-listing-card__meta-data-item">Careers</li>
+            </ul>
+        <h3 class="regular-listing-card__title">Soldier recalls family links to Jamaica as UK marks Windrush 75</h3>
+
+            <p class="regular-listing-card__description">Today is the 75th anniversary of the HMT Empire Windrush arriving in Britain on 22 June 1948. The ship brought migrants from the Caribbean to help rebuild the country following WWII. To mark the occasion, a soldier tells the story of his family&#x2019;s links to Jamaica.</p>
+    </div>
+    <a href="/news/soldier-recalls-family-links-to-jamaica-as-uk-marks-windrush-75/" class="stretched-link" aria-label="Soldier recalls family links to Jamaica as UK marks Windrush 75"></a>
+</div>
+
+                </div>
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">21 Sept 2022</li>
+                    <li class="regular-listing-card__meta-data-item">Careers</li>
+            </ul>
+        <h3 class="regular-listing-card__title">First Officer Cadets swear oath of allegiance to the King</h3>
+
+            <p class="regular-listing-card__description">For the first time in over 70 years, British Army Officer Cadets have sworn their oaths of allegiance to a King.</p>
+    </div>
+    <a href="/news/first-officer-cadets-swear-oath-of-allegiance-to-the-king/" class="stretched-link" aria-label="First Officer Cadets swear oath of allegiance to the King"></a>
+</div>
+
+                </div>
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">17 Aug 2023</li>
+                    <li class="regular-listing-card__meta-data-item">Careers</li>
+            </ul>
+        <h3 class="regular-listing-card__title">A generation of new soldiers step off into their careers</h3>
+
+            <p class="regular-listing-card__description">Lifelong dreams were fulfilled as hundreds of junior soldiers graduated from Army Foundation College (AFC) Harrogate. More than 400 marched onto the parade square to mark the successful completion of their Phase One training.&#xA0;</p>
+    </div>
+    <a href="/news/a-generation-of-new-soldiers-step-off-into-their-careers/" class="stretched-link" aria-label="A generation of new soldiers step off into their careers"></a>
+</div>
+
+                </div>
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">4 Sept 2023</li>
+                    <li class="regular-listing-card__meta-data-item">Careers</li>
+            </ul>
+        <h3 class="regular-listing-card__title">&#x27;You belong here&#x27;, says latest British Army recruitment campaign</h3>
+
+            <p class="regular-listing-card__description">The British Army has unveiled its latest recruitment campaign: &#x2018;You Belong Here&#x2019; to challenge the misconceptions among the 59% of young people who do not believe they would fit in, in the British Army.</p>
+    </div>
+    <a href="/news/you-belong-here-says-latest-british-army-recruitment-campaign/" class="stretched-link" aria-label="&#x27;You belong here&#x27;, says latest British Army recruitment campaign"></a>
+</div>
+
+                </div>
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">13 Sept 2024</li>
+                    <li class="regular-listing-card__meta-data-item">Careers</li>
+            </ul>
+        <h3 class="regular-listing-card__title">Soldiers dodge super tankers in daring cross-Channel swim</h3>
+
+            <p class="regular-listing-card__description">A team of soldiers has successfully swum the English Channel, navigating a way through the world&#x2019;s busiest shipping lanes.</p>
+    </div>
+    <a href="/news/soldiers-dodge-super-tankers-in-daring-cross-channel-swim/" class="stretched-link" aria-label="Soldiers dodge super tankers in daring cross-Channel swim"></a>
+</div>
+
+                </div>
+                <div class="regular-listing-card-carousel__col regular-listing-card-carousel__swiper-slide swiper-slide">
+                    
+<div class="regular-listing-card">
+
+
+    <div class="regular-listing-card__text-content">
+            <ul class="regular-listing-card__meta-data-list">
+                    <li class="regular-listing-card__meta-data-item">News</li>
+                    <li class="regular-listing-card__meta-data-item">7 Oct 2023</li>
+                    <li class="regular-listing-card__meta-data-item">Careers</li>
+            </ul>
+        <h3 class="regular-listing-card__title">Soldiers set world record for most number of countries crossed on foot</h3>
+
+            <p class="regular-listing-card__description">Three soldiers from the Military Provost Staff (MPS) Regiment have set a world record for the greatest number of countries visited on foot in a week.</p>
+    </div>
+    <a href="/news/soldiers-set-world-record-for-most-number-of-countries-crossed-on-foot/" class="stretched-link" aria-label="Soldiers set world record for most number of countries crossed on foot"></a>
+</div>
+
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    </div>
+</div>
+        </div>
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="imageQuoteBlock" data-content-element-type-key="a071daca-66a6-4996-bbf2-fd211dd4bcf7" data-element-udi="umb://element/0b82d2fedf364d2f93a396f03db3209f" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="image-quote image-quote--inactive theme theme--dark" ax-load x-ignore x-data="imageQuote()" x-intersect:enter.margin.-50%="handleEnterViewport()" x-intersect:leave.margin.-50%="handleLeaveViewport(false)" x-bind:class="{ 'image-quote--inactive': !active }">
+
+    <div class="image-quote__container">
+        <div class="image-quote__row">
+            <div class="image-quote__content-col">
+                <blockquote class="image-quote__quote">
+                    <p class="image-quote__quote-text">
+                        If you&#x2019;re thinking about joining I&#x2019;d say just go for it &#x2013; the Army is a fantastic career.
+                    </p>
+                        <footer class="image-quote__citation">
+                            <i class="quote__citation-icon fa-sharp fa-light fa-quote-left" aria-hidden="true"></i>
+                            <p class="image-quote__citation-text">
+                                Lance Corporal Laura Phillips, Royal Signals
+                            </p>
+                        </footer>
+                </blockquote>
+                    <a class="image-quote__cta-btn cta-btn cta-btn--primary" href="https://jobs.army.mod.uk"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+                        Visit Army Jobs
+                    </span></a>
+            </div>
+            <div class="image-quote__image-col">
+                    <style>#media-a4803345 { --media-aspect-ratio: 600/600; }
+@media (min-width:576px) { #media-a4803345 { --media-aspect-ratio: 400/300; }}
+@media (min-width:992px) { #media-a4803345 { --media-aspect-ratio: 600/600; }}
+@media (min-width:1200px) { #media-a4803345 { --media-aspect-ratio: 600/600; }}
+</style><picture class="image-quote__image-content" id="media-a4803345"><source data-srcset="/media/v2zpnf5q/4fe47063691464d03ddc48e4683428eb.jpg?width=1280&height=1280&format=webp&quality=50&v=1db13f8eefae9c0" media="(min-width:1200px)"/><source data-srcset="/media/v2zpnf5q/4fe47063691464d03ddc48e4683428eb.jpg?width=600&height=600&format=webp&quality=60&v=1db13f8eefae9c0" media="(min-width:992px)"/><source data-srcset="/media/v2zpnf5q/4fe47063691464d03ddc48e4683428eb.jpg?width=992&height=744&format=webp&quality=70&v=1db13f8eefae9c0" media="(min-width:576px)"/><img class="lazy" data-src="/media/v2zpnf5q/4fe47063691464d03ddc48e4683428eb.jpg?width=576&height=576&format=webp&quality=70&v=1db13f8eefae9c0" alt="" /></picture>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="umb-block-grid__layout-item" data-content-element-type-alias="imageTextBannerBlock" data-content-element-type-key="ddc8934d-6520-4f98-b5a2-0d74d7b966a9" data-element-udi="umb://element/8de93f4df0cf4a49a1f91b169153eaff" data-col-span="12" data-row-span="1" style="--umb-block-grid--item-column-span: 12; --umb-block-grid--item-row-span: 1;">
+
+<div class="image-text-banner image-text-banner--inactive theme theme--cloud" ax-load x-ignore x-data="imageTextBanner()" x-intersect:enter.margin.-50%="handleEnterViewport()" x-intersect:leave.margin.-50%="handleLeaveViewport($store.mediaQuery.matches.lg.down)" x-bind:class="{ 'image-text-banner--inactive': !active }">
+
+     <div class="image-text-banner__container">
+        <div class="image-text-banner__row row">
+            <div class="image-text-banner__image-col">
+                    <style>#media-78aacdc9 { --media-aspect-ratio: 600/600; }
+@media (min-width:768px) { #media-78aacdc9 { --media-aspect-ratio: 400/300; }}
+@media (min-width:1200px) { #media-78aacdc9 { --media-aspect-ratio: 300/400; }}
+</style><picture class="image-text-banner__image-content" id="media-78aacdc9"><source data-srcset="/media/0cbfrvid/8c35cc96283e8a74a6a1045edf00835a.jpg?rxy=0.4717553044915955,0.04617842601659537&width=1280&height=1707&format=webp&quality=50&v=1db13f8ef030010" media="(min-width:1200px)"/><source data-srcset="/media/0cbfrvid/8c35cc96283e8a74a6a1045edf00835a.jpg?rxy=0.4717553044915955,0.04617842601659537&width=600&height=450&format=webp&quality=60&v=1db13f8ef030010" media="(min-width:768px)"/><img class="lazy" data-src="/media/0cbfrvid/8c35cc96283e8a74a6a1045edf00835a.jpg?rxy=0.4717553044915955,0.04617842601659537&width=768&height=768&format=webp&quality=70&v=1db13f8ef030010" alt="" /></picture>
+            </div>
+            <div class="image-text-banner__content-col">
+                    <ul class="image-text-banner__tagline">
+                        <li>Army Life</li>
+                    </ul>
+
+                    <h2 class="image-text-banner__title">The Army is its people</h2>
+            
+                    <div class="image-text-banner__description rte">
+                        <p>What makes the British Army? It’s not the weaponry or the vehicles – it’s the people.</p>
+<p>Our vision is a competitive, adaptable and inclusive Army imbued with an unwavering will to win; where people feel they belong; where their talent is nurtured, where health is positively promoted, and opportunity maximised.</p>
+                    </div>
+
+                    
+<div class="accordion"
+    x-ignore ax-load
+    x-data="accordion()">
+            
+<div class="accordion-item">
+    <button type="button"
+            class="accordion-item__header collapsed"
+            data-bs-target="#collapse-15777192"
+            aria-expanded="false"
+            aria-controls="collapse-15777192">
+        <h2 class="accordion-item__header-title" id="heading-15777192">
+            Welfare
+        </h2>
+        <i class="accordion-item__header-icon"><i aria-hidden="true" class="btn__icon fa-sharp fa-regular fa-arrow-down"></i><span class="btn__text" data-text-content=""></span></i>
+    </button>
+    <div class="accordion-item__body collapse"
+         id="collapse-15777192"
+         aria-labelledby="heading-15777192">
+        <div class="accordion-item__content rte theme-zone theme--cloud">
+            <p>The Army offers a wide range of welfare services for its Regular, Reserve, Civilian and Contractor personnel. This ranges from financial, medical, wellbeing, and family support. The page below provide further information on the options available including Unit Welfare Support, Army Welfare Service, Army Related Charities, and support for Civil Servants. In the case of an emergency, please contact 999 in the first instance or if you experience a serious illness or death in your family, you should call Joint Casualty and Compassionate Centre (JCCC) on 01452 519951.</p>
+
+<a data-target-content-id="2256" href="/support-and-training/welfare/" class="nav-link cta-btn cta-btn--primary"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+    Learn more
+</span></a>
+
+        </div>
+    </div>
+</div>
+
+            
+<div class="accordion-item">
+    <button type="button"
+            class="accordion-item__header collapsed"
+            data-bs-target="#collapse-dea4a89d"
+            aria-expanded="false"
+            aria-controls="collapse-dea4a89d">
+        <h2 class="accordion-item__header-title" id="heading-dea4a89d">
+            Health, performance and wellbeing
+        </h2>
+        <i class="accordion-item__header-icon"><i aria-hidden="true" class="btn__icon fa-sharp fa-regular fa-arrow-down"></i><span class="btn__text" data-text-content=""></span></i>
+    </button>
+    <div class="accordion-item__body collapse"
+         id="collapse-dea4a89d"
+         aria-labelledby="heading-dea4a89d">
+        <div class="accordion-item__content rte theme-zone theme--cloud">
+            <p>A career in the Armed Forces is career like no other – but it also comes with a unique set of challenges. We recognise the sacrifices our people make, and in return, we’ll do everything we can to make sure you’re looked after throughout your Army career and beyond.</p>
+
+<a data-target-content-id="1627" href="/support-and-training/health-performance-and-wellbeing/" class="nav-link cta-btn cta-btn--primary"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+    Learn more
+</span></a>
+
+        </div>
+    </div>
+</div>
+
+            
+<div class="accordion-item">
+    <button type="button"
+            class="accordion-item__header collapsed"
+            data-bs-target="#collapse-14b79754"
+            aria-expanded="false"
+            aria-controls="collapse-14b79754">
+        <h2 class="accordion-item__header-title" id="heading-14b79754">
+            Financial and legal support
+        </h2>
+        <i class="accordion-item__header-icon"><i aria-hidden="true" class="btn__icon fa-sharp fa-regular fa-arrow-down"></i><span class="btn__text" data-text-content=""></span></i>
+    </button>
+    <div class="accordion-item__body collapse"
+         id="collapse-14b79754"
+         aria-labelledby="heading-14b79754">
+        <div class="accordion-item__content rte theme-zone theme--cloud">
+            <p>The Army offers a wide range of benefits for its personnel including competitive pay and pension. Follow the links below to find out more about pay and pension in the Army, as well as support on how to manage your finances.</p>
+
+<a data-target-content-id="2317" href="/support-and-training/welfare/financial-and-legal-support/" class="nav-link cta-btn cta-btn--primary"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+    Learn more
+</span></a>
+
+        </div>
+    </div>
+</div>
+
+            
+<div class="accordion-item">
+    <button type="button"
+            class="accordion-item__header collapsed"
+            data-bs-target="#collapse-9187ef81"
+            aria-expanded="false"
+            aria-controls="collapse-9187ef81">
+        <h2 class="accordion-item__header-title" id="heading-9187ef81">
+            Veteran support
+        </h2>
+        <i class="accordion-item__header-icon"><i aria-hidden="true" class="btn__icon fa-sharp fa-regular fa-arrow-down"></i><span class="btn__text" data-text-content=""></span></i>
+    </button>
+    <div class="accordion-item__body collapse"
+         id="collapse-9187ef81"
+         aria-labelledby="heading-9187ef81">
+        <div class="accordion-item__content rte theme-zone theme--cloud">
+            <p>The UK Government defines a veteran as someone who has served for at least one day in the UK Armed Forces (as a Regular or Reservist).</p>
+<p>There is a range of support available for our Service Leavers to support them through the transition to civilian life and beyond. Visit the Service Leavers &amp; Veterans page to find out more.</p>
+
+<a data-target-content-id="1608" href="/support-and-training/veterans/" class="nav-link cta-btn cta-btn--primary"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+    Learn more
+</span></a>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+                    <a class="image-text-banner__cta-btn cta-btn cta-btn--primary" data-target-content-id="1611" href="/army-careers/army-life/"><span class="cta-btn__bg"></span><span class="cta-btn__text">
+                        Learn more
+                    </span></a>
+            
+            </div>
+        </div>
+     </div>
+</div>
+        </div>
+</div>
+
+</div>
+</div>
+
+</div>
+        </div>
+</div>
+
+</div>
+
+
+    </main>
+    <footer class="main-page-layout__footer">
+        
+<div class="footer theme theme--dark">
+    <div class="footer__container">
+        <div class="footer__main row">
+                <div class="footer__col footer__col--cta-content col">
+                    <h2 class="footer__cta-heading">You Belong Here</h2>
+                        <p class="footer__cta-description">The Army offers you challenge and adventure that you simply can&#x2019;t find in any other job.</p>
+                    <a class="footer__link-btn link-btn" rel="external" target="_blank" href="https://jobs.army.mod.uk/" ax-load="" x-ignore="" x-data="linkButton" x-on:mouseleave="close()" x-on:blur="close()" x-bind:class="{ &#x27;link-btn--closing&#x27;: closing, &#x27;link-btn--closed&#x27;: closed }"><span class="link-btn__text">Visit Army Jobs</span></a>
+                    <a class="footer__cta-btn cta-btn cta-btn--secondary" rel="external" target="_blank" href="https://jobs.army.mod.uk/"><span class="cta-btn__bg"></span><span class="cta-btn__text">Visit Army Jobs</span></a>
+                </div>
+                <div class="footer__col footer__col--cta-content col">
+                    <h2 class="footer__cta-heading">Contact the Army</h2>
+                        <p class="footer__cta-description">Find the contacts you need for support, careers, media enquiries and more.</p>
+                    <a class="footer__link-btn link-btn" data-target-content-id="1587" href="/contact/" ax-load="" x-ignore="" x-data="linkButton" x-on:mouseleave="close()" x-on:blur="close()" x-bind:class="{ &#x27;link-btn--closing&#x27;: closing, &#x27;link-btn--closed&#x27;: closed }"><span class="link-btn__text">Get in touch</span></a>
+                    <a class="footer__cta-btn cta-btn cta-btn--secondary" data-target-content-id="1587" href="/contact/"><span class="cta-btn__bg"></span><span class="cta-btn__text">Get in touch</span></a>
+                </div>
+                <div class="footer__col footer__col--social col">
+                    <h2 class="footer__social-heading">Stay connected</h2>
+                    <ul class="footer__social-link-list">
+                            <li class="footer__social-link-item">
+                                <a class="social-link" rel="external" target="_blank" href="https://www.facebook.com/britisharmy"><i aria-hidden="true" class="social-link__icon fa-brands fa-facebook-f"></i><span class="social-link__text" data-text-content="British Army">British Army</span></a>
+                            </li>
+                            <li class="footer__social-link-item">
+                                <a class="social-link" rel="external" target="_blank" href="https://www.linkedin.com/company/british-army"><i aria-hidden="true" class="social-link__icon fa-brands fa-linkedin-in"></i><span class="social-link__text" data-text-content="british-army">british-army</span></a>
+                            </li>
+                            <li class="footer__social-link-item">
+                                <a class="social-link" rel="external" target="_blank" href="https://twitter.com/britisharmy"><i aria-hidden="true" class="social-link__icon fa-brands fa-x-twitter"></i><span class="social-link__text" data-text-content="@britisharmy">@britisharmy</span></a>
+                            </li>
+                            <li class="footer__social-link-item">
+                                <a class="social-link" rel="external" target="_blank" href="https://www.threads.net/@britisharmy"><i aria-hidden="true" class="social-link__icon fa-brands fa-threads"></i><span class="social-link__text" data-text-content="@britisharmy">@britisharmy</span></a>
+                            </li>
+                            <li class="footer__social-link-item">
+                                <a class="social-link" rel="external" target="_blank" href="https://www.instagram.com/britisharmy/"><i aria-hidden="true" class="social-link__icon fa-brands fa-instagram"></i><span class="social-link__text" data-text-content="britisharmy">britisharmy</span></a>
+                            </li>
+                            <li class="footer__social-link-item">
+                                <a class="social-link" rel="external" target="_blank" href="https://www.youtube.com/britisharmy"><i aria-hidden="true" class="social-link__icon fa-brands fa-youtube"></i><span class="social-link__text" data-text-content="@britisharmy">@britisharmy</span></a>
+                            </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="footer__bottom">
+            <ul class="footer__page-link-list">
+                            <li>
+                                <a class="footer__page-link ancestor" data-target-content-id="1577" href="/">Homepage</a>
+                            </li>
+                            <li>
+                                <a class="footer__page-link" data-target-content-id="1588" href="/accessibility/">Accessibility</a>
+                            </li>
+                            <li>
+                                <a class="footer__page-link" data-target-content-id="1589" href="/freedom-of-information/">Freedom of information</a>
+                            </li>
+                            <li>
+                                <a class="footer__page-link" data-target-content-id="1590" href="/privacy-and-cookies/">Privacy and cookies</a>
+                            </li>
+                            <li>
+                                <a class="footer__page-link" data-target-content-id="1591" href="/security-policy/">Security policy</a>
+                            </li>
+                <li>
+                    <button class="footer__page-link" onclick="CookieControl.open()"> Change Cookie Preferences </button>
+                </li>
+            </ul>
+            <p class="footer__legal-text">2024 &#xA9; MOD Crown Copyright</p>
+            <a class="footer__scroll-top action-btn action-btn--light" href="#page-top"><i aria-hidden="true" class="action-btn__icon fa-sharp fa-regular fa-chevron-up"></i><span class="action-btn__text" data-text-content="Go to top">Go to top</span></a>
+        </div>
+    </div>
+</div>
+
+    </footer>
+</div>
+
+
+    <script src="/dist/main.js?v=k7EGSSpsFT8Pcj0DWq67ZpkvfXs-6FVx2vv_0kZ83Ls"></script>
+    
+    
+</body>
+</html>
